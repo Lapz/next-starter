@@ -1,3 +1,3 @@
 # Next.js App Template
 
-A next.js application with material-ui, mobx-state-tree, next-size and purgecss
+A barebones next.js application with next-size,purgecss and next-images
