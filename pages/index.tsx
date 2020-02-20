@@ -1,10 +1,7 @@
 import React, { useState } from "react"
 import Head from "next/head"
-import { useStore } from "../stores"
 
 const Home = () => {
-  const store = useStore()
-
   return (
     <div>
       <Head>
