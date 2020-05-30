@@ -4,10 +4,7 @@
  * You really shouldn't be modifying this so if you are think carefully
  */
 
-import "normalize.css/normalize.css"
-import "bulma/css/bulma.css"
-import "../assets/css/index.css"
-
+import "../styles/index.css"
 export default function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }

@@ -1,7 +1,9 @@
 import React, { useState } from "react"
 import Head from "next/head"
+import { useStore } from "../stores"
 
 const Home = () => {
+  const { count, increase, reset } = useStore()
   return (
     <div>
       <Head>
@@ -30,6 +32,16 @@ const Home = () => {
             <h3>Examples &rarr;</h3>
             <p>Find other example boilerplates on the Next.js GitHub.</p>
           </a>
+        </div>
+
+        <div className="row">
+          <h1 className="stand-out">Count:{count}</h1>
+          <button className="btn-blue" onClick={increase}>
+            Increase
+          </button>
+          <button className="btn-blue" onClick={reset}>
+            Reset
+          </button>
         </div>
       </div>
 
